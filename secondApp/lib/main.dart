@@ -7,6 +7,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        // brightness: Brightness.dark,
+        brightness: Brightness.light,
+        primarySwatch: Colors.lime,
+        accentColor: Colors.blue
+      ),
       home: Scaffold(
         appBar: AppBar(
           title: Text('Easy List'),
